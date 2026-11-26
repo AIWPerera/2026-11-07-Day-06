@@ -1,115 +1,143 @@
 
-{
-    var bike = "YAMAHA";
-}
-console.log(bike);
+console.log("hello");
+// class Customer {
+//     name;
+//     age;
+//     address;
+
+//     constructor(name, age, address) {
+//         this.name = name;
+//         this.age = age;
+//         this.address = address;
+//     }
+
+// }
+// let customer1 = new Customer("John Doe", 30, "123 Main St, Anytown, USA");
+// let customer2 = new Customer("Jane Smith", 25, "456 Elm St, Othertown, USA");
+
+// console.log(customer1);
+// console.log(customer2);
+
+// let Customer = {
+//     name: "John Doe",
+//     age: 30,
+//     address: "123 Main St, Anytown, USA",
+// }
+
+// console.log(Customer);
 
 
-// Array
-let customer = ["John", "Jane", "Bob", true, 42];
+// let CustomerList = [
+//     {
+//         name: "Saman Kumara",
+//         age: 30,
+//         address:"Colombo, Sri Lanka",
+//         itemsDetails: [
+//             {
+//                 BillNumber: "0001",
+//                 item : [
+//                     {
+//                         itemName: "Item 1",
+//                         itemPrice: 100,
+//                     },
+//                     {
+//                         itemName: "Item 2",
+//                         itemPrice: 200,
+//                     }
+//                 ]
+//             }
 
-console.log(customer);
+//         ]
+//     },
+//     {
+//         name: "Nimal Perera",
+//         age: 25,
+//         address:"Kandy, Sri Lanka"
+//     },
+//     {
+//         name: "Sunil Silva",
+//         age: 35,
+//         address:"Galle, Sri Lanka"
+//     },
+//     {
+//         name: "Rajitha Fernando",
+//         age: 40,
+//         address:"Matara, Sri Lanka"
+//     },
+//     {
+//         name: "Samantha Perera",
+//         age: 30,
+//         address:"Colombo, Sri Lanka"
+//     }
+// ]
 
-
-// Object - Java Class
-class Customer {
-    name;
-    age;
-    address;
-
-    constructor(name, age, address) {
-        this.name = name;
-        this.age = age;
-        this.address = address;
-    }
-}
-
-let customer1 = new Customer("John", 30, "123 Main St");
-let customer2 = new Customer("Jane", 25, "456 Oak Ave");
-
-console.log(customer1);
-console.log(customer2);
-
-
-// Object - JavaScript
-let customer3 = {
-    name: "Bob",
-    age: 40,
-    address: "789 Elm St"
-};
-
-console.log(customer3);
-
-
-// Array List
-let CustomerList = [
-    {
-        name: "Saman Kumara",
-        age: 30,
-        address: "Colombo",
-
-        Items: [
-            {
-                itemName: "Laptop",
-                itemPrice: 1000000
-            },
-            {
-                itemName: "Mouse",
-                itemPrice: 2000
-            }
-        ]
-    },
-
-    {
-        name: "Nimal Perera",
-        age: 25,
-        address: "Wadduwa"
-    },
-
-    {
-        name: "Indumini Wathsala",
-        age: 21,
-        address: "Molligoda"
-    }
-];
-
-console.log(CustomerList);
+// console.log(CustomerList);
+// console.log(CustomerList[0].items[0].itemName);
 
 
-// Access Array List Data
-console.log(CustomerList[0].Items[0].itemName);
+
+// ----------------- DOM Manipulation (DOM - Document Object Model) -----------------
+
+// console.log(document);
+
+// document.write("<h1>Hello World</h1>");
+// document.write("<h2>Hello World</h2>");
 
 
-// DOM Manipulation
-console.log(document);
 
+// let number = 0;
+// function btnClickMeOnAction(){
 
-// Title code (currently disabled)
-// let title = document.getElementById("title");
-// console.log(title);
-// title.innerHTML = "<h1>Hello Icet....</h1>";
+//     title.innerText = "Saman Kumara - " + number++;
+// }
 
+// -- Number Count APP -- 
 
-// Increment and Decrement
-//let number = 0;
-//let NumberCount = document.getElementById("NumberCount");
+// let number = 0;
+// function btnIncrementOnAction(){
+//   number++;
+//   numberCount.innerText = "Number Count - " +number;
+// }
 
-//function btnIncrementAction() {
-//    number++;
-//    NumberCount.innerText = "Number Count - " + number;
-//}
-
-//function btnDecrementAction() {
+// function btnDecrementOnAction(){
 //    number--;
-//    NumberCount.innerText = "Number Count - " + number;
-//}
+//    numberCount.innerText = "Number Count - " +number;
+
+// }
 
 
-function btnSubmitAction() {
-    let txtName = document.getElementById("txtName");
-    console.log(txtName.value);
+// function btnSubmitOnAction(){
+//    let txtName = document.getElementById("txtName");
+//    console.log(txtName.value);
 
-    let name = document.getElementById("name");
-    name.innerText = "My Name is : " + txtName.value;
+//    submitedName.innerText = "My Name is - " + txtName.value;
+
+// }
+
+
+function btnAddOnAction() {
+    let inputnum1 =document.getElementById("txtNum1").value;
+    let inputnum2 =document.getElementById("txtNum2").value;
+
+    console.log(inputnum1);
+    console.log(inputnum2);
+
+    let result = parseInt(inputnum1) + parseInt(inputnum2);
+    outPut.innerText = "Result is - " + result;
+    console.log(result);
+
 }
 
+function btnSubtractOnAction() {
+   let inputnum1 =document.getElementById("txtNum1").value;
+    let inputnum2 =document.getElementById("txtNum2").value;
+
+    console.log(inputnum1);
+    console.log(inputnum2);
+
+    let result = parseInt(inputnum1) - parseInt(inputnum2);
+    outPut.innerText = "Result is - " + result;
+    console.log(result);
+
+
+}
