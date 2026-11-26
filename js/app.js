@@ -5,12 +5,10 @@
 console.log(bike);
 
 
-
 // Array
 let customer = ["John", "Jane", "Bob", true, 42];
 
 console.log(customer);
-
 
 
 // Object - Java Class
@@ -33,7 +31,6 @@ console.log(customer1);
 console.log(customer2);
 
 
-
 // Object - JavaScript
 let customer3 = {
     name: "Bob",
@@ -42,8 +39,6 @@ let customer3 = {
 };
 
 console.log(customer3);
-
-
 
 
 // Array List
@@ -79,13 +74,42 @@ let CustomerList = [
 ];
 
 console.log(CustomerList);
+
+
 // Access Array List Data
 console.log(CustomerList[0].Items[0].itemName);
 
 
-
-
-//----------------DOM Manipulatiions (doument object model)---------------
+// DOM Manipulation
 console.log(document);
-document.write("<h1>Hello World....</h1>");
-document.write("<h2>Hello World....</h2>");
+
+
+// Title code (currently disabled)
+// let title = document.getElementById("title");
+// console.log(title);
+// title.innerHTML = "<h1>Hello Icet....</h1>";
+
+
+// Increment and Decrement
+//let number = 0;
+//let NumberCount = document.getElementById("NumberCount");
+
+//function btnIncrementAction() {
+//    number++;
+//    NumberCount.innerText = "Number Count - " + number;
+//}
+
+//function btnDecrementAction() {
+//    number--;
+//    NumberCount.innerText = "Number Count - " + number;
+//}
+
+
+function btnSubmitAction() {
+    let txtName = document.getElementById("txtName");
+    console.log(txtName.value);
+
+    let name = document.getElementById("name");
+    name.innerText = "My Name is : " + txtName.value;
+}
+
